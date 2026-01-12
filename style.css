@@ -205,7 +205,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
     
 }
 .strelice label {
@@ -223,7 +223,7 @@ body {
   color: #151414;
   cursor: pointer;
   z-index: 10;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 }
 
 
@@ -608,3 +608,4 @@ footer p {
     color: #e4c8f0;
     font-size: 18px;
 }
+
