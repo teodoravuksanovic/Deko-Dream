@@ -1,7 +1,34 @@
-lign-items: center;
-    width: 100%;
-    padding: 10px 20px;
-    background-color: #3e0a5a;
+*{
+box-sizing: border-box;  
+margin: 0;  
+padding: 0;  
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+html, body {
+width: 100%;
+min-height: 100vh;
+background-color: #e4c8f0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+background-color: #e4c8f0;
+}
+
+.meni{
+position: sticky;
+top: 0;
+left: 0;
+z-index: 1000;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+width: 100%;
+padding: 10px 20px;
+background-color: #3e0a5a;
 }
 
 .logo{
@@ -606,4 +633,5 @@ footer p {
     color: #e4c8f0;
     font-size: 18px;
 }
+
 
