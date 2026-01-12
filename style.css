@@ -201,13 +201,15 @@ main{
 .strelice {
   position: absolute;
   inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none; 
 }
 .strelice label {
-  position: absolute;
-  top: 50%;
   width: 40px;
   height: 40px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -216,20 +218,9 @@ main{
   background: rgba(126, 126, 126, 0.7);
   color: #151414;
   cursor: pointer;
-  border-radius: 50%;
   z-index: 10;
-  transform: translate(-50%, -50%);
 }
 
-
-.strelice .prev {
-    left: 50px; 
-    top: 50%;
-}
-.strelice .next { 
-    right: 50px; 
-    top: 50%;
-}
 #s1:checked ~ .strelice .s1,
 #s2:checked ~ .strelice .s2,
 #s3:checked ~ .strelice .s3,
@@ -467,28 +458,20 @@ footer p {
     }
 
     .galerija_slideshow {
-        height: 300px;
+        height: 300vw;
     }
 
     .red {
         flex-direction: column;
     }
 
-    .galerija_slideshow .strelice label {
-        width: 25px;
-        height: 25px;
-        font-size: 20px;
+    .strelice label {
+        width: 30x;
+        height: 30px;
+        font-size: 22px;
     }
 
-    .galerija_slideshow .strelice .prev {
-        left: 8%;
-    }
-
-    .galerija_slideshow .strelice .next {
-        right: 8%;
-    }
-
-    .galerija_slideshow .kruzici label {
+    .kruzici label {
         width: 10px;
         height: 10px;
     }
@@ -539,20 +522,15 @@ footer p {
         height: 45vh;
     }
 
-    .galerija_slideshow .strelice label {
-        width: 30px;
-        height: 30px;
-        font-size: 25px;
+    .strelice label {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
     }
-    .galerija_slideshow .strelice .prev {
-        left: 10%;
-    }
-    .galerija_slideshow .strelice .next {
-        right: 10%;
-    }
-    .galerija_slideshow .kruzici label {
-        width: 10px;
-        height: 10px;
+    
+    .kruzici label {
+        width: 8px;
+        height: 8px;
     }
 }
 
@@ -572,20 +550,14 @@ footer p {
         min-width: 100%;
     }
     
-    .galerija_slideshow .strelice label {
-        width: 25px;
-        height: 25px;
-        font-size: 20px;
+    .strelice label {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
     }
-    .galerija_slideshow .strelice .prev {
-        left: 8%;
-    }
-    .galerija_slideshow .strelice .next {
-        right: 8%;
-    }
-    .galerija_slideshow .kruzici label {
-        width: 8px;
-        height: 8px;
+     .kruzici label {
+        width: 6px;
+        height: 6px;
     }
 }
 
@@ -642,22 +614,18 @@ footer p {
     .galerija_slideshow {
         height: 28vh;
     }
-    .galerija_slideshow .strelice label {
-        width: 22px;
-        height: 22px;
-        font-size: 18px;
+    .strelice label {
+        width: 18px;
+        height: 18px;
+        font-size: 14px;
     }
-    .galerija_slideshow .strelice .prev {
-        left: 5%;
-    }
-    .galerija_slideshow .strelice .next {
-        right: 5%;
-    }
-    .galerija_slideshow .kruzici label {
-        width: 6px;
-        height: 6px;
+   
+    .kruzici label {
+        width: 4px;
+        height: 4px;
     }
 }
+
 
 
 
