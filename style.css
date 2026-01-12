@@ -219,9 +219,7 @@ body {
   color: #151414;
   cursor: pointer;
   z-index: 10;
-  transform: translateY(-50%);
-}
-
+  transform: translate(-50%, -50%);
 
 .strelice .prev {
     left: 15px; 
@@ -602,5 +600,6 @@ footer p {
     color: #e4c8f0;
     font-size: 18px;
 }
+
 
 
