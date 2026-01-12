@@ -1,34 +1,35 @@
-*{
-box-sizing: border-box;  
-margin: 0;  
-padding: 0;  
-font-family: 'Times New Roman', Times, serif;
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #230632;
 }
 
 html, body {
-width: 100%;
-min-height: 100vh;
-background-color: #e4c8f0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e4c8f0;
 }
 
 body {
-display: flex;
-flex-direction: column;
-background-color: #e4c8f0;
+    display: flex;
+    flex-direction: column;
+    background-color: #e4c8f0;
 }
 
+
 .meni{
-position: sticky;
-top: 0;
-left: 0;
-z-index: 1000;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-width: 100%;
-padding: 10px 20px;
-background-color: #3e0a5a;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #3e0a5a;
 }
 
 .logo{
@@ -205,40 +206,38 @@ background-color: #3e0a5a;
   left: 0;
   width: 100%;
   height: auto;
+    
 }
-
 .strelice label {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   display: none;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  line-height: 1;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 50%;
   background: rgba(126, 126, 126, 0.7);
   color: #151414;
-  border-radius: 50%;
   cursor: pointer;
   z-index: 10;
-  padding: 0;
+  transform: translate(-50%, -50%);
 }
+
 
 .strelice .prev {
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
+    left: 15px; 
+    top: 50%;
+    transform: translateY(-50%)
 }
+.strelice .next { 
+    right: 15px; 
+    top: 50%;
+    transform: translateY(-50%)
 
-.strelice .next {
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
 }
-
-
 #s1:checked ~ .strelice .s1,
 #s2:checked ~ .strelice .s2,
 #s3:checked ~ .strelice .s3,
@@ -251,24 +250,20 @@ background-color: #3e0a5a;
 
 .kruzici {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 50%;
-  transform: translateX(-50%);
   display: flex;
-  gap: 8px;
+  gap: 10px;
   z-index: 10;
+  transform: translateX(-50%);
 }
 
 .kruzici label {
-  width: 8px;
-  height: 8px;
-  min-width: 8px;
-  min-height: 8px;
-  max-width: 8px;
-  max-height: 8px;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1.5px solid #fff;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
+  background: rgba(229, 201, 241, 0.5);
+  cursor: pointer;
 }
 
 #s1:checked ~ .kruzici label[for="s1"],
@@ -290,6 +285,7 @@ background-color: #3e0a5a;
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     gap: 40px;
@@ -547,18 +543,6 @@ input[type=submit]:hover{
         width: 100%;
         min-width: 100%;
     }
-  .strelice label {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-  }
-
-  .kruzici label {
-    width: 6px;
-    height: 6px;
-  }
-}
-
 }
 
 
@@ -603,15 +587,6 @@ input[type=submit]:hover{
         height: 30px;
         font-size: 30px;
     }
-    .strelice label {
-    width: 25px;
-    height: 25px;
-    font-size: 16px;
-  }
-
-  .kruzici label {
-    width: 5px;
-    height: 5px;
 
     .forma {
         padding: 10px;
@@ -633,5 +608,3 @@ footer p {
     color: #e4c8f0;
     font-size: 18px;
 }
-
-
