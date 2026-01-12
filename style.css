@@ -202,16 +202,15 @@ body {
 .strelice {
   position: absolute;
   inset: 0;
+  pointer-events: none;
 }
 
 .strelice label {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 32px !important;
-  height: 32px !important;
-  max-width: 32px;
-  max-height: 32px;
+  width: 45px;
+  height: 45px;
   display: none;
   align-items: center;
   justify-content: center;
@@ -222,8 +221,8 @@ body {
   border-radius: 50%;
   cursor: pointer;
   z-index: 10;
-  opacity:0;
   padding: 0;
+  pointer-events: auto;
 }
 
 
@@ -542,14 +541,14 @@ input[type=submit]:hover{
         min-width: 100%;
     }
   .strelice label {
-    width: 28px !important;
-    height: 28px !important;
+    width: 30px;
+    height: 30px;
     font-size: 18px;
   }
 
   .kruzici label {
-    width: 6px !important;
-    height: 6px !important;
+    width: 6px;
+    height: 6px;
   }
 }
 
@@ -597,6 +596,15 @@ input[type=submit]:hover{
         height: 30px;
         font-size: 30px;
     }
+    strelice label {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  .kruzici label {
+    width: 5px;
+    height: 5px;
 
     .forma {
         padding: 10px;
@@ -618,6 +626,7 @@ footer p {
     color: #e4c8f0;
     font-size: 18px;
 }
+
 
 
 
