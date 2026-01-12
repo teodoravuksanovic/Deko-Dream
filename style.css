@@ -12,8 +12,10 @@ html, body {
 }
 
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    flex: 1;
     background-color: #e4c8f0;
 }
 
@@ -219,6 +221,7 @@ body {
   cursor: pointer;
   z-index: 10;
   transform: translate(-50%, -50%);
+}
 
 .strelice .prev {
     left: 15px; 
@@ -599,6 +602,7 @@ footer p {
     color: #e4c8f0;
     font-size: 18px;
 }
+
 
 
 
