@@ -202,7 +202,6 @@ body {
 .strelice {
   position: absolute;
   inset: 0;
-  pointer-events: none;
 }
 
 .strelice label {
@@ -225,7 +224,6 @@ body {
   z-index: 10;
   opacity:0;
   padding: 0;
-  pointer-events: none;
 }
 
 
@@ -243,7 +241,6 @@ body {
 #s6:checked ~ .strelice .s6,
 #s7:checked ~ .strelice .s7 {
   opacity: 1;
-  pointer-events: auto;
 }
 
 .kruzici {
@@ -621,6 +618,7 @@ footer p {
     color: #e4c8f0;
     font-size: 18px;
 }
+
 
 
 
