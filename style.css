@@ -422,9 +422,7 @@ footer {
 footer p {
     color: #e4c8f0;
     font-size: 18px;
-}
-
-Media querry 
+} 
 
 @media (max-width: 900px) {
 
@@ -569,3 +567,4 @@ Media querry
     margin-top: 15px;
   }
 }
+
